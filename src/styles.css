@@ -24,7 +24,7 @@ button { font: inherit; }
 
 .app-shell { min-height: 100vh; }
 .site-header { height: 64px; background: #fff; border-bottom: 1px solid #dfe9e9; }
-.header-inner { height: 100%; max-width: 1600px; margin: auto; padding: 0 38px; display: flex; align-items: center; gap: 46px; }
+.header-inner { height: 100%; padding: 0 clamp(26px, 6vw, 94px); display: flex; align-items: center; gap: 46px; }
 .brand { display: flex; align-items: center; }
 .brand-logo { display: block; width: 132px; height: auto; }
 .header-tabs { height: 100%; display: flex; align-items: stretch; gap: 4px; }
