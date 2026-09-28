@@ -46,13 +46,13 @@ export function DebugView() {
         <div>
           <p className="eyebrow">DEVELOPMENT</p>
           <h1>调试</h1>
-          <p className="page-subtitle">查看本地 Agent 状态</p>
+          <p className="page-subtitle">查看 Agent 状态</p>
         </div>
         <div className="count-badge"><Activity size={16} /> {agents.length} 个 Agent · {runningCount} 个运行中</div>
       </div>
 
       <section className="status-section" aria-label="Agent 状态">
-        <div className="section-heading"><h2>Agent 状态</h2><span>每秒更新</span></div>
+        <div className="section-heading"><h2>Agent 状态</h2></div>
         {error ? <p className="status-error" role="alert">{error}</p> : (
           <>
             <div className="agent-grid" aria-label="Agent 状态列表">
@@ -71,8 +71,6 @@ export function DebugView() {
                 </article>
               ))}
             </div>
-            <div className="response-heading">接口返回</div>
-            <pre className="json-output">{agents.length ? JSON.stringify(agents, null, 2) : '读取中...'}</pre>
           </>
         )}
       </section>
