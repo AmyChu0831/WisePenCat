@@ -13,7 +13,7 @@ function App() {
       <header className="site-header">
         <div className="header-inner">
           <div className="brand" aria-label="WisePen">
-            <img className="brand-logo" src="/wisepen-logo.svg" alt="WisePen" />
+            <img className="brand-logo" src={`${import.meta.env.BASE_URL}wisepen-logo.svg`} alt="WisePen" />
           </div>
           <nav className="header-tabs" aria-label="主导航">
             <button className={view === 'contributors' ? 'header-tab active' : 'header-tab'} onClick={() => setView('contributors')} aria-current={view === 'contributors' ? 'page' : undefined}>
